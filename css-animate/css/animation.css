@@ -1,0 +1,42 @@
+#rotate{
+	transform: rotate(45deg);
+	object-position: center;
+}
+
+#skew{
+	transform: skew(215deg);
+}
+
+#all{
+	transform: rotate(20deg);
+	transform: skewY(20deg);
+	transform: scaleY(0.5);
+}
+
+
+@keyframes stagesofgrief{
+	20%{
+		background-color: purple;
+	}
+	40%{
+		transform: scale(2.5);
+		background-color: red;
+	}
+	60%{
+		transform: skewY(115deg);
+		background-color: blue;
+	}
+	80%{
+		transform: scale(0.5);
+		background-color: black;
+	}
+	100%{
+		transform: scale(1);
+		transform:skew(90deg);
+		background-color: green;
+	}
+}
+
+#animate{
+	animation: stagesofgrief 10s infinite;
+}
